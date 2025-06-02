@@ -1,0 +1,232 @@
+ <!-- tailwind css -->
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <!-- tailwind css -->
+     <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
+
+ <!-- <script>
+        tailwind.config = {
+         content: [
+            './**/*.html', // Untuk file HTML
+            './**/*.blade.php', // Untuk file Blade Laravel
+            './**/*.js', // Untuk file JavaScript
+        ],
+        theme : {
+            screens: {
+                sm: '300px',
+                md: '768px',
+                lg: '1024px',
+                xl: '1280px',
+             },
+        }
+             
+        }
+</script> -->
+
+
+ @if (session()->has('SuccessRegister'))
+
+ <nav class="fixed z-10 top-0 border-black border-b-2 max-h-20   left-0 w-screen bg-white flex py-3 px-2">
+    <button id="hamburgerButton" class="ml-auto block lg:hidden">
+        <i class="fa-solid fa-bars text-xl"></i>
+    </button>
+     <div class="flex gap-7">
+        <div class="flex max-w-72 gap-4">
+            <img class="max-h-15" src="{{ asset('asset/logo.png') }}" alt="">
+            <div class="my-auto" >
+            <p class="text-[18px] font-semibold">SMA PGRI Sindangsono</p>
+        </div>
+    </div>
+    
+    <div class="flex w-full justify-between sm:hidden lg:block">
+        <div class="my-auto flex gap-6">
+            <a href="{{ route('front.index') }}" class="{{ request()->is('/') ? ' text-[#0c720f] font-bold' : 'font-normal' }} font-roboto text-[16px]">Beranda</a>
+            <a href="{{ route('front.activity') }}" class="{{ request()->is('kegiatan') ? ' text-[#0c720f] font-bold' : 'font-normal' }} font-roboto text-[16px]">Kegiatan</a>
+            <a href="{{ route('ppdb.register') }}" class="{{ request()->is('ppdb') ? ' text-[#0c720f] font-bold' : 'font-normal' }}  font-roboto text-[16px]">PPDB</a>
+            <a href="{{ route('front.teacher') }}" class="{{ request()->is('daftar-pengajar') ? ' text-[#0c720f] font-bold' : 'font-normal' }} font-roboto text-[16px]">SDA</a>
+            <a href="{{ route('front.contact') }}" class="{{ request()->is('hubungi-kami') ? ' text-[#0c720f] font-bold' : 'font-normal' }} font-roboto text-[16px]">Hubungi Kami</a>
+            <!-- <a href="{{ route('front.announcement') }}" class="font-normal font-roboto text-[16px]">Pengumuman</a> -->
+        </div>
+        <div class="relative my-auto ">
+            <button id="dropdownButton" class="text-balck bg-white focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 flex items-center">
+                Informasi
+                <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path>
+                </svg>
+            </button>
+            <div id="dropdownMenu" class="absolute right-[-50px] mt-2 hidden w-48 bg-black rounded-lg shadow-md">
+                <a href="{{ route('front.news') }}" class="block px-4 py-2 text-white hover:text-black hover:bg-gray-100">Berita</a>
+                <a href="{{ route('front.announcement') }}" class="block px-4 py-2 text-white hover:text-black hover:bg-gray-100">Pengumuman</a>
+                <a href="{{ route('front.prestasion') }}" class="block px-4 py-2 text-white hover:text-black hover:bg-gray-100">Prestasi</a>
+                <a href="{{ route('front.extrakulikuler') }}" class="block px-4 py-2 text-white hover:text-black hover:bg-gray-100">Ekstrakulikuler</a>
+            </div>
+        </div>
+    </div>
+        
+        @auth
+          <div class="relative my-auto sm:hidden lg:block">
+                <button id="dropdownButton2" class="text-balck bg-white focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 flex items-center">
+                 <p><i class="fa-solid fa-circle-user"></i> {{ auth()->user()->name }}</p> 
+                    <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </button>
+                <div id="dropdownMenu2" class="absolute right-[50px] mt-2 hidden w-48 bg-black rounded-lg shadow-md">
+                    <a href="{{ route('dashboard.index') }}" class="block px-4 py-2 text-white hover:text-black hover:bg-gray-100">Dashboard</a>
+                </div>
+            </div>  
+        @else
+        <div class="sm:hidden lg:block my-auto">
+            <a href="{{ route('login') }}" class="text-[16px] text-xl text-white px-3 py-3 bg-[#0c720f] rounded-xl font-semibold text-end">Sign In</a>
+        </div>
+        @endauth
+         
+     </div>     
+</nav>
+
+
+    
+   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis perferendis quam earum mollitia neque reprehenderit, sunt magnam distinctio explicabo corporis impedit nihil corrupti provident. Repudiandae, minima tempora quam quas vel numquam eligendi quidem reprehenderit totam dicta suscipit fugit qui in maiores quae quod explicabo quo perspiciatis facilis voluptatum saepe, velit expedita. Minus ea suscipit repellat facere quas ipsam quibusdam adipisci aperiam aspernatur deserunt ex dolores quia sit et, distinctio officiis labore placeat eum itaque sunt molestias? Molestiae, inventore delectus! Fuga labore dolor nam maiores quo. Quam quaerat dolorum sapiente consequatur corrupti facere explicabo quo voluptates omnis vel harum nam necessitatibus illo fugiat ipsa voluptate, ipsum quibusdam sequi officia blanditiis similique aperiam temporibus, deleniti reiciendis. Molestias aliquid, neque reiciendis eaque amet doloribus facilis similique qui. Accusantium aut eveniet explicabo dolores asperiores porro, impedit, nihil voluptates iste harum esse distinctio nobis tempore aliquam velit incidunt quibusdam aliquid sequi quam in qui aspernatur? Magni dolorum et inventore, fugit officia delectus id aut, velit incidunt totam deserunt pariatur ut officiis? Tenetur culpa fugiat expedita pariatur veniam odio doloribus, sapiente asperiores perferendis quod, quas rem voluptatem repudiandae ratione mollitia rerum cumque officia quasi voluptatibus impedit. Laboriosam tenetur qui aliquam accusamus possimus ratione voluptatem commodi beatae? 
+
+
+
+
+
+   
+
+nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    gap: 2rem;
+    width: 100%;
+    padding: 10px 0;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.7rem;
+    position: relative;
+    padding: 6px 0;
+    opacity: 0.5;
+}
+
+nav ul li a::before{
+    content: '';
+    width: 0%;
+    position: absolute;
+    height: 2.5px;
+    background-color: white;
+    bottom: 0;
+}
+nav ul li a.active::before{
+    width: 80%;
+}
+
+nav ul li a.active{
+    opacity: 1;
+}
+nav ul li a:hover::before{
+    opacity: 1;
+    width: 80%;
+}
+
+.slider-container{
+    background-color: white;
+    width: 100vw;
+    height: 100vh;
+    isolation: isolate;
+}
+
+.slider-container .slider-item{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    position: absolute;
+    transition: opacity 3000ms;
+}
+
+.slider-container div[data-show="hidden"]{
+    /* display: block; */
+    z-index: -1;
+    opacity: 0;
+}
+.slider-container div[data-show="show"]{
+    /* display: block; */
+    opacity: 1;
+}
+
+.slider-container .slider-item::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: linear-gradient(to top, black,rgba(0, 0, 0, 0.5), transparent);
+    
+}
+
+.slider-container .slider-item img{
+    width: 100%;
+    height: 100%;
+
+    /* full parent supaya tidak gepeng */
+    object-fit: cover;
+}
+
+.slider-item .slider-content{
+    display : flex;
+    max-width: 900px;
+    max-height: 500px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    color: white;
+    text-align: center;
+}
+
+.slider-item .slider-content *{
+    margin: 10px 0;
+}
+
+.slider-content .slider-description{
+    width: 50ch;
+}
+
+.slider-content .slider-title{
+    font-size: 4.5rem;
+    font-weight: bold;
+}
+
+.slider-content .silder-action{
+    color: wheat    ;
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 5px 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    isolation: isolate;
+}
+
+.slider-content .silder-action::before{
+    content: '';
+    background:white;
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    width: 0;
+    transition: all 500ms;
+
+}
+
+.slider-content .silder-action:hover::before{
+    width: 100%;
+
+}      
