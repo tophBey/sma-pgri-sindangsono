@@ -33,7 +33,7 @@
                 </div>
             </a>
             @empty
-                <div class="w-[40%] shadow-lg shadow-[#0c720f] rounded-xl flex align-middle justify-center min-h-64 bg-white">
+                <div class="lg:w-[40%] md:w-[40%] sm:w-full shadow-lg shadow-[#0c720f] rounded-xl flex align-middle justify-center min-h-64 bg-white">
                     <p class="  my-auto text-2xl font-bold text-center">Pengumuman Belum Tersedia</p>
                 </div>
             @endforelse

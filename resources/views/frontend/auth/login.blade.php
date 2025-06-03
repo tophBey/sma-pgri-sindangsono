@@ -4,7 +4,13 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <meta name="description" content="Selamat Datang di Website SMA PGRI Sindangsono, Menyidiakan informasi profile sekolah, PPDB, dan Kegiatan lainnya">
+        <meta name="description" content="Selamat Datang di Website SMA PGRI Sindangsono, Menyidiakan informasi profile sekolah, PPDB, dan Kegiatan lainnya. Nama, : SMAS PGRI SINDANGSONO, NPSN : 69725917,  Alamat: KP. CAYUR RT. 06/02. Desa/Kelurahan, : SINDANG SONO. Kecamatan/Kota (LN), : KEC. SINDANG JAYA.">
+        <meta property="og:description" content="Selamat Datang di Website SMA PGRI Sindangsono, Menyidiakan informasi profile sekolah, PPDB, dan Kegiatan lainnya. Nama, : SMAS PGRI SINDANGSONO, NPSN : 69725917,  Alamat: KP. CAYUR RT. 06/02. Desa/Kelurahan, : SINDANG SONO. Kecamatan/Kota (LN), : KEC. SINDANG JAYA.">
+        <meta property="og:image" content="{{ asset('asset/logo.png') }}">
+        <meta property="og:image:type" content="image/jpeg">
+        <meta property="og:image:width" content="1200">
+        <meta property="og:image:height" content="627">
+        <meta property="og:url" content="https://smapgri-sindangsono.sch.id">
         <meta name="robots" content="index, follow">
 
         <!-- font-aweosme -->
@@ -47,7 +53,7 @@
 
                             </div>
                             <div class="mt-3">
-                                <h1 class="text-center font-semibold text-xl">SMA PGRI Sindang Sono</h1>
+                                <h1 class="text-center font-semibold text-xl">SMA PGRI Sindangsono</h1>
                             </div>
                         </div>
 

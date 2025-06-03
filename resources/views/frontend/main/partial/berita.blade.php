@@ -35,16 +35,16 @@
                 @empty
                 <div class="w-[246px] h-[429px] rounded-xl bg-white shadow-xl">
                    <div class="w-full h-[138px] max-h-[138px]  relative">
-                       <img class="object-cover w-full h-[138px] max-h-[138px] rounded-tl-xl rounded-tr-xl" src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y2FyfGVufDB8fDB8fHww" alt="">
+                       <img class="object-cover w-full h-[138px] max-h-[138px] rounded-tl-xl rounded-tr-xl" src="{{ asset('asset/bg.png') }}" alt="">
                        <div class="absolute flex justify-center items-center  h-14 w-14 border-2 bottom-[-30px] bg-[#ececec] shadow-2xl rounded-xl border-[#0c720f] ">
                            <p class="text-center font-semibold text-sm">20 MAR</p>
                        </div>
                    </div>
                    <div class="w-full px-3 py-4 mt-5  min-h-20">
-                       <h2 class="text-md font-semibold line-clamp-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum voluptates at, suscipit eius blanditiis qui.</h2>
+                       <h2 class="text-md font-semibold line-clamp-3">Belum Tersedia</h2>
                    </div>
                    <div class="w-full px-3  py-2 min-h-20">
-                       <h2 class="text-sm text-gray-500 font-normal line-clamp-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum voluptates at, suscipit eius blanditiis qui.</h2>
+                       <h2 class="text-sm text-gray-500 font-normal line-clamp-3">Saat ini belum ada berita terbaru</h2>
                    </div>
 
                    <div class="w-full px-3 flex justify-center items-center py-2 min-h-20 mt-1">
