@@ -38,7 +38,7 @@
             
                 <div class="my-auto">
                     <h3 class="text-[18px] mb-3 font-semibold text-gray-400">Email :</h3>
-                    <p class="lg:text-[16px] lg:text-sm md:text-[9.5px] font-normal">smapgrisindangsono183@gmail.com</p>
+                    <p class="lg:text-[16px] lg:text-sm md:text-[9.5px] sm:text-xs font-normal">smapgrisindangsono183@gmail.com</p>
                 </div>
             </div>
             <div class="lg:w-[343px] md:w-[270px] md:h-[157px] sm:w-full sm:mt-2 lg:mt-0 md:mt-0 flex gap-2  py-3 px-3 lg:h-[157px] bg-white shadow-xl rounded-xl border-spacing-3 ">

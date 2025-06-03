@@ -7,7 +7,7 @@
     <div class="lg:w-[70%] flex ">
         <div class="min-w-32 min-h-24">
             <div class="w-20 h-20 p-8 flex lg:mt-0 md:mt-0 sm:mt-2 justify-center items-center  rounded-full border-4 border-[#ffffff]">
-                <i class="fa-solid fa-trophy text-[34px] font-bold text-white"></i>
+                <i class="fa-solid fa-mountain-sun text-[34px] font-bold text-white"></i>
             </div>
         </div>
 
