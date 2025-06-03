@@ -15,7 +15,7 @@
 
 
 </head>
-<body class="overflow-x-hidden overflow-hidden">
+<body class="overflow-x-hidden">
 
     <!-- navbar -->
         @include('frontend.main.partial.sidebar')
