@@ -93,6 +93,7 @@ nav ul li a:hover::before{
 }
 
 .slider-item .slider-content{
+    overflow: hidden;
     display : flex;
     max-width: 900px;
     max-height: 500px;
@@ -109,7 +110,8 @@ nav ul li a:hover::before{
 }
 
 .slider-content .slider-description{
-    width: 50ch;
+
+    overflow-x: hidden;
 }
 
 

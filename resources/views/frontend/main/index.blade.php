@@ -15,7 +15,7 @@
 
 
 </head>
-<body class="overflow-x-hidden">
+<body class="overflow-x-hidden overflow-hidden">
 
     <!-- navbar -->
         @include('frontend.main.partial.sidebar')
@@ -51,15 +51,15 @@
     });
 
 
-  const dropdownMobile = document.getElementById('dropdownButtonMobile');
-   const dropdownMenuMobile2 = document.getElementById('dropdownMenuMobile');
+  const dropdownMobile4 = document.getElementById('dropdownButtonMobile');
+   const dropdownMenuMobile4 = document.getElementById('dropdownMenuMobile');
 
   const dropdownAuthMobile = document.getElementById('dropdownButtonAuth');
    const dropdownMenuAuth = document.getElementById('dropdownMenuAuth');
 
-    dropdownMobile.addEventListener('click', function(){
+    dropdownMobile4.addEventListener('click', function(){
         // console.log('tetst')
-        dropdownMenuMobile2.classList.toggle('hidden')
+        dropdownMenuMobile4.classList.toggle('hidden')
     })
 
     dropdownAuthMobile.addEventListener('click', function(){

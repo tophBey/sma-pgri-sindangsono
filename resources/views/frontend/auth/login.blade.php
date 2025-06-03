@@ -103,6 +103,31 @@
             }
     });
 
+    const dropdownButton = document.getElementById('dropdownButton');
+  const dropdownMenu2 = document.getElementById('dropdownMenu');
+
+  const dropdownButtonMobile99 = document.getElementById('dropdownButtonMobile');
+  const dropdownMenuMobile99 = document.getElementById('dropdownMenuMobile');
+
+
+  if(dropdownMenu2.classList.contains('hidden')){
+      dropdownMenuMobile99.classList.add('hidden')
+
+  }
+
+    // mobile button
+
+    dropdownButtonMobile99.addEventListener('click', () => {
+      console.log('hello');
+      dropdownMenuMobile99.classList.toggle('hidden');
+    });
+  
+    document.addEventListener('click', (event) => {
+      if (!dropdownButtonMobile99.contains(event.target) && !dropdownMenuMobile.contains(event.target)) {
+        dropdownMenuMobile99.classList.add('hidden');
+      }
+    });
+
 </script>
     </body>
 </html> 
