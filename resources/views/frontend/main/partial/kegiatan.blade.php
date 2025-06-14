@@ -11,11 +11,7 @@
             @forelse ( $activities as $activity )
             <a href="{{ route('front.activityDetail', $activity) }}" class="block w-[256px] h-[200px] border rounded-xl">
                 <img src="{{ Storage::url($activity->photo_activity) }}" alt="" class=" w-[256px] h-[200px] rounded-xl">
-            </a>
-            <a href="{{ route('front.activityDetail', $activity) }}" class="block w-[256px] h-[200px] border rounded-xl">
-                <img src="{{ Storage::url($activity->photo_activity) }}" alt="" class=" w-[256px] h-[200px] rounded-xl">
-            </a>
-                
+            </a>        
             @empty
             <a href="" class="block w-[256px] h-[200px] border rounded-xl text-center font-bold">
                 Belum ada kegiatan terbaru

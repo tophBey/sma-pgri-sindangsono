@@ -18,7 +18,7 @@
                    <div class="w-full h-[138px] max-h-[138px]  relative">
                        <img class="object-cover w-full h-[138px] max-h-[138px] rounded-tl-xl rounded-tr-xl" src="{{ Storage::url($new->thumbnail) }}" alt="">
                        <div class="absolute flex justify-center items-center  h-14 w-14 border-2 bottom-[-30px] bg-[#ececec] shadow-2xl rounded-xl border-[#0c720f] ">
-                           <p class="text-center font-semibold text-sm">20 MAR</p>
+                           <p class="text-center font-semibold text-sm">{{ $new->created_at->format('d M')  }}</p>
                        </div>
                    </div>
                    <div class="w-full px-3 py-4 mt-5  min-h-20">

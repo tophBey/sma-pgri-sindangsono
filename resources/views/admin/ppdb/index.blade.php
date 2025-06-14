@@ -134,7 +134,7 @@
                 </tr>
             @empty
                 <tr>
-                     <td colspan="4"><p class="font-bold text-center text-2xl mt-4">Pendaftar Belum tersedia</p></td>
+                     <td colspan="6"><p class="font-bold text-center text-2xl mt-4">Pendaftar Belum tersedia</p></td>
                 </tr>
             @endforelse
             </tbody>
