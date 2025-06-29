@@ -133,7 +133,7 @@ class TeacherController extends Controller
             $teacher->delete();
             DB::commit();
 
-            return redirect()->route('admin.teacher.index');
+            return redirect()->route('admin.teacher.index')->with('successTeacher', 'Berhasil Menghapus Guru');
 
         } catch (Exception $exeption) {
 

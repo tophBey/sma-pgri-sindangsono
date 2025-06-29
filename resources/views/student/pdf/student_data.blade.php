@@ -45,24 +45,33 @@
         <div class="content  relative">
             <div class="content-item mr-6">
 
-                <div class="biodata relative biodata-student">
+                <div class="biodata relative biodata-student biodata-box">
                     <div class="biodata-name absolute-l-2">
                         <h3>ID REGISTRASI</h3>
                         <h3>NAMA SISWA</h3>
+                        <h3>JENIS KELAMIN</h3>
+                        <h3>AGAMA</h3>
+                        <h3>NISN</h3>
+                        <h3>NIK</h3>
                         <h3>TEMPAT LAHIR</h3>
                         <h3>TANGGAL LAHIR</h3>
                         <h3>NO HANDPHONE</h3>
-                        <h3>NISN</h3>
-                        <h3>NIK</h3>
+                        <h3>ALAMAT</h3>
                     </div>
                     <div class="biodata-value absolute-r-1">
                         <p>: {{ $student->id }}</p>
-                        <p>: {{ strtoupper($student->fullname) }} </p>
-                        <p>: {{ strtoupper($student->place_of_birth) }} </p>
-                        <p>: {{ $student->date_of_birth }} </p>
-                        <p>: {{ $student->phone }} </p>
+                        <p class="name-hidden">: {{ strtoupper($student->fullname) }} </p>
+                        <!-- <p class="name-hidden">: Lorem ipsum dolor sit amet consectetur adipisicing elit. </p> -->
+                        <p>: {{ strtoupper($student->gender) }} </p>
+                        <p>: {{ strtoupper($student->religion) }} </p>
                         <p>: {{ $student->nisn }} </p>
                         <p>: {{ $student->nik }} </p>
+                        <p>: {{ strtoupper($student->place_of_birth) }} </p>
+                        <!-- <p>: {{ $student->date_of_birth }} </p> -->
+                        <p>: {{ strtoupper($student->formatted_date_of_birth) }} </p>
+                        <p>: {{ $student->phone }} </p>
+                        <p class="school-name">: {{ $student->address }} </p>
+                        <!-- <p class="school-name">: Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, inventore. Dolor exercitationem corrupti officia molestias quos cupiditate non perferendis deleniti earum quis deserunt reprehenderit autem id aliquam, magnam, modi excepturi perspiciatis iusto omnis? Delectus. </p> -->
                     </div>
                 </div>
 
@@ -79,7 +88,7 @@
                            
                         </div>
                         <div class="biodata-value absolute top-8 right-2 ">
-                            <p class="school-name">: {{ strtoupper($student->previousSchool->shcool_name) }}</p>
+                            <p class="school-name name-hidden">: {{ strtoupper($student->previousSchool->shcool_name) }}</p>
                             <p>: {{ $student->previousSchool->graduation_year }}</p>
                             <p class="school-name">: {{ $student->previousSchool->address }}</p>
                             

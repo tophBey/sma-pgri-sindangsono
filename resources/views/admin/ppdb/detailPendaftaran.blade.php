@@ -70,12 +70,16 @@
                             <p class="font-bold lg:text-xl md:text-xl sm:text-lg">{{ $student->name }}</p>
                         </div>
                         <div class="mb-2">
-                            <h2 class="font-medium text-lg text-gray-500">Gender</h2>
+                            <h2 class="font-medium text-lg text-gray-500">Jenis Kelamin</h2>
                             <p class="font-bold lg:text-xl md:text-xl sm:text-lg">{{ $student->student->gender }}</p>
                         </div>
                         <div class="mb-2">
+                            <h2 class="font-medium text-lg text-gray-500">Agama</h2>
+                            <p class="font-bold lg:text-xl md:text-xl sm:text-lg">{{ $student->student->religion }}</p>
+                        </div>
+                        <div class="mb-2">
                             <h2 class="font-medium text-lg text-gray-500">Tempat Tanggal Lahir</h2>
-                            <p class="font-bold lg:text-xl md:text-xl sm:text-sm">{{ $student->student->place_of_birth}}, {{ $student->student->date_of_birth }}</p>
+                            <p class="font-bold lg:text-xl md:text-xl sm:text-sm">{{ $student->student->place_of_birth}}, {{ strtoupper($student->student->date_of_birth->translatedFormat('d F Y')) }}</p>
                         </div>
                         <div class="mb-2">
                             <h2 class="font-medium text-lg text-gray-500">Nisn</h2>
@@ -135,7 +139,7 @@
                 <p class="font-signika font-medium mb-4 text-[20px]">Wali Siswa</p>
 
                 <div class="flex md:flex-nowrap lg:flex-nowrap sm:flex-wrap border-b-4 gap-8 w-full py-3 ">
-                    <div class="sm:w-[100%] sm:border-b-2 sm:mb-3 md:mb-0 lg:mb-0 lg:w-[45%] lg:border-r-2 md:w-[45%] md:border-r-2 ">
+                    <div class="sm:w-[100%] sm:border-b-2 md:border-b-0 lg:border-b-0 sm:mb-3 md:mb-0 lg:mb-0 lg:w-[45%] lg:border-r-2 md:w-[45%] md:border-r-2 ">
                         <div class="mb-2">
                             <h2 class="font-medium text-lg text-gray-500">Nama</h2>
                             <p class="font-bold lg:text-xl md:text-xl sm:text-lg">{{ $student->student->custodian->name }}</p>

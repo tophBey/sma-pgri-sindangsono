@@ -79,17 +79,18 @@
         </div>
 
         <div class="w-full min-h-[200px] mt-3 px-5 py-3 rounded-lg border-2 border-dashed">
-        @if ($student->status == 'accepted')
-            <div class="w-full">
-                <p class="font-bold text-xl ">Selamat anda Lolos Pendaftaran 🎉</p>
-                <p class="font-semibold text-gray-500 mt-4">Silakan melengkapi administrasi di sekolah untuk langkah berikutnya. Terima kasih telah mendaftar dan kami tunggu kehadiran Anda. </p>
-            </div>
-        @elseif ($student->status == 'rejected')
-            <div class="w-full">
-                <p class="font-bold text-xl ">Mohon Maaf</p>
-                <p class="font-semibold text-gray-500 mt-4">Kami sampaikan bahwa Anda belum memenuhi persyaratan untuk lolos pendaftaran. Namun, kami menghargai upaya Anda dan berharap Anda terus semangat dalam perjalanan Anda. Terima kasih.</p>
-            </div>
-        @endif
+
+            @if ($student->status == 'accepted')
+                <div class="w-full">
+                    <p class="font-bold text-xl ">Selamat anda Lolos Pendaftaran 🎉</p>
+                    <p class="font-semibold text-gray-500 mt-4">Silakan melengkapi administrasi di sekolah untuk langkah berikutnya. Terima kasih telah mendaftar dan kami tunggu kehadiran Anda. </p>
+                </div>
+            @elseif ($student->status === 'rejected')
+                <div class="w-full">
+                    <p class="font-bold text-xl ">Mohon Maaf</p>
+                    <p class="font-semibold text-gray-500 mt-4">Kami sampaikan bahwa Anda belum memenuhi persyaratan untuk lolos pendaftaran. Namun, kami menghargai upaya Anda dan berharap Anda terus semangat dalam perjalanan Anda. Terima kasih.</p>
+                </div>
+            @endif
         </div>
     </div>
 </div>

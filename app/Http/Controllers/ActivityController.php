@@ -131,7 +131,7 @@ class ActivityController extends Controller
             $activity->delete();
             DB::commit();
 
-            return redirect()->route('admin.activity.index');
+            return redirect()->route('admin.activity.index')->with('successActivity', 'Berhasil Menghapus Kegiatan');
 
         } catch (Exception $exeption) {
 

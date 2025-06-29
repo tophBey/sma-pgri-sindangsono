@@ -21,6 +21,7 @@ class UpdateStudentRequest extends FormRequest
             'fullname' => 'required|string',
             'nik' => 'required',
             'nisn' => 'required',
+            'religion' => 'required|string',
             'gender' => 'required',
             'address' => 'required|string',
             'place_of_birth' => 'required|string',
@@ -54,6 +55,9 @@ class UpdateStudentRequest extends FormRequest
         'date_of_birth.date' => 'Tanggal lahir harus berupa format tanggal yang valid.',
 
         'phone.required' => 'Nomor telepon wajib diisi.',
+
+        'religion.required' => 'Agama wajib diisi.',
+        'religion.string' => 'Agama harus berupa teks.'
     ];
 }
 

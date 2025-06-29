@@ -17,6 +17,7 @@ return new class extends Migration
             $table->string('nik')->unique();
             $table->enum('gender',['Laki-laki', 'Wanita']);
             $table->string('nisn')->unique();
+            $table->string('religion')->unique(); //baru
             $table->string('place_of_birth');
             $table->enum('status',['accepted', 'rejected'])->nullable(true); //baru di rubah
             $table->date('date_of_birth');

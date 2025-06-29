@@ -131,7 +131,7 @@ class BannerController extends Controller
             $banner->delete();
             DB::commit();
 
-            return redirect()->route('admin.banner.index');
+            return redirect()->route('admin.banner.index')->with('successBanner', 'Berhasil Menghapus Banner');
 
         } catch (Exception $exeption) {
 

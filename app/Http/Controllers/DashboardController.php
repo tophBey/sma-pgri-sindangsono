@@ -20,6 +20,7 @@ class DashboardController extends Controller
         $user = Auth::user();
         $student = Student::where('user_id', $user->id)->first();
         
+        
         $admins = User::where('role', 'admin')->count();
         $students = User::where('role', '!=', 'admin')->count();
         $teacher = Teacher::all()->count();

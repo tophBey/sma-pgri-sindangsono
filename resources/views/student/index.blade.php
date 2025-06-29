@@ -109,6 +109,9 @@
                             <p class="text-[16px] font-medium">{{ $student->gender }}</p>
                         </div>
                         <div class="w-full h-10 mb-4 rounded-xl bg-[#F5F6F9] border py-1 px-4 flex items-center">
+                            <p class="text-[16px] font-medium">{{ $student->religion }}</p>
+                        </div>
+                        <div class="w-full h-10 mb-4 rounded-xl bg-[#F5F6F9] border py-1 px-4 flex items-center">
                             <p class="text-[16px] font-medium">{{ $student->nik }}</p>
                         </div>
                         <div class="w-full h-10 mb-4 rounded-xl bg-[#F5F6F9] border py-1 px-4 flex items-center">

@@ -203,13 +203,13 @@ class StudentController extends Controller
 
             DB::commit();
 
-            return redirect()->route('student.ppdb.index')->with('successPPDB', 'Berhasil Mengubah Wali Murid');
+            return redirect()->route('student.ppdb.index')->with('SuccessUpdate', 'Berhasil Mengubah Wali Murid');
 
         } catch (Exception $exeption) {
 
             DB::rollBack();
 
-            return redirect()->route('student.ppdb.index')->with('FailedPPDB', $exeption->getMessage());
+            return redirect()->route('student.ppdb.index')->with('FailedUpdate', $exeption->getMessage());
         }
     }
 
@@ -248,13 +248,13 @@ class StudentController extends Controller
             $student->update($validated);
 
             DB::commit();
-            return redirect()->route('student.ppdb.index')->with('successPPDB', 'Berhasil merubah data murid');
+            return redirect()->route('student.ppdb.index')->with('SuccessUpdate', 'Berhasil merubah data murid');
 
         } catch (Exception $exeption) {
 
             DB::rollBack();
 
-            return redirect()->route('student.ppdb.index')->with('FailedPPDB', $exeption->getMessage());
+            return redirect()->route('student.ppdb.index')->with('FailedUpdate', $exeption->getMessage());
         }
 
     }
@@ -281,13 +281,13 @@ class StudentController extends Controller
 
             DB::commit();
             
-            return redirect()->route('student.ppdb.index')->with('successPPDB', 'Berhasil merubah orang tua murid');
+            return redirect()->route('student.ppdb.index')->with('SuccessUpdate', 'Berhasil merubah orang tua murid');
 
         } catch (Exception $exeption) {
 
             DB::rollBack();
 
-            return redirect()->route('student.ppdb.index')->with('FailedPPDB', $exeption->getMessage());
+            return redirect()->route('student.ppdb.index')->with('FailedUpdate', $exeption->getMessage());
         }
 
     }
@@ -314,13 +314,13 @@ class StudentController extends Controller
 
             DB::commit();
             
-            return redirect()->route('student.ppdb.index')->with('successPPDB', 'Berhasil mengubah asal sekolah');
+            return redirect()->route('student.ppdb.index')->with('SuccessUpdate', 'Berhasil mengubah asal sekolah');
 
         } catch (Exception $exeption) {
 
             DB::rollBack();
 
-            return redirect()->route('student.ppdb.index')->with('FailedPPDB', $exeption->getMessage());
+            return redirect()->route('student.ppdb.index')->with('FailedUpdate', $exeption->getMessage());
         }
 
     }

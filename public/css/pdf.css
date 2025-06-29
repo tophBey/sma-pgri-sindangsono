@@ -140,7 +140,7 @@
 
 .content-item{
     width: 70%;
-    height: 200px;
+    height: 400px;
 }
 
 .biodata{
@@ -207,8 +207,8 @@ div.coontent-photo{
 }
 
 .information{
-    margin-top: 20px;
-    height: 200px;
+    margin-top: 250px;
+    height: 120px;
     font-family: sans-serif;
     padding: 10px 10px;
     font-size: 14px;
@@ -235,4 +235,13 @@ mt-30{
 .school-name {
     font-size: 14px;
     text-wrap: no-wrap;
+}
+
+.biodata-box{
+    height: 420px;
+    overflow-y :hidden
+}
+
+.name-hidden{
+    white-space: nowrap;
 }

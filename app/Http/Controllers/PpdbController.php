@@ -65,12 +65,12 @@ class PpdbController extends Controller
 
             DB::commit();
 
-            return redirect()->route('admin.ppdb.index');
+            return redirect()->route('admin.ppdb.index')->with('successPPDB', 'Berhasil Menghapus Calon Pendaftar');;
 
         } catch (Exception $exeption) {
 
             DB::rollBack();
-            return redirect()->route('admin.ppdb.index')->with('FailedTeacher', $exeption->getMessage());
+            return redirect()->route('admin.ppdb.index')->with('FailedPPDB', $exeption->getMessage());
 
         }
     }

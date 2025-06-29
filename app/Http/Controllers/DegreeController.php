@@ -109,7 +109,7 @@ class DegreeController extends Controller
             $degree->delete();
             DB::commit();
 
-            return redirect()->route('admin.degree.index');
+            return redirect()->route('admin.degree.index')->with('successDegree', 'Berhasil Menghapus Gelar');
 
         } catch (Exception $exeption) {
 

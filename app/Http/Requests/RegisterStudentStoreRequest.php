@@ -23,6 +23,7 @@ class RegisterStudentStoreRequest extends FormRequest
             'nisn' => 'required|string',
             'place_of_birth' => 'required|string',
             'date_of_birth' => 'required|date',
+            'religion' => 'required|string',
             'phone' => 'required|string',
             'address' => 'required|string',
 
@@ -62,6 +63,8 @@ class RegisterStudentStoreRequest extends FormRequest
             'phone.required' => 'Nomor telepon wajib diisi.',
             'address.required' => 'Alamat wajib diisi.',
             'address.string' => 'Alamat harus berupa teks.',
+            'religion.required' => 'Agama wajib diisi.',
+            'religion.string' => 'Agama harus berupa teks.',
 
             // Validation messages for parents' information
             'father_name.required' => 'Nama ayah wajib diisi.',

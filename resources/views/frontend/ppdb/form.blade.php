@@ -29,6 +29,13 @@
                     @enderror
             </div>
             <div class="w-full  mt-5">
+                <p class="font-signika font-medium text-[14px] text-[#222831] mb-2">Agama</p>
+                <input name="religion" value="{{old('religion')}}" type="text"  class=" focus:outline-none w-full border border-black focus:ring-4 focus:border-none focus:ring-[#0c720f]   h-[55px] rounded-xl pl-[20px] bg-[#FAFAFA]" placeholder="Masukan Agama" required>
+                    @error('religion')
+                        <span class="text-red-500 mt-1 font-semibold ml-6 block py-1 text-sm">{{ $message }}</span>
+                    @enderror
+            </div>
+            <div class="w-full  mt-5">
                 <p class="font-signika font-medium text-[14px] text-[#222831] mb-2">Tempat Lahir</p>
                 <input name="place_of_birth" value="{{old('place_of_birth')}}"  type="text" class=" focus:outline-none w-full border border-black focus:ring-4 focus:border-none focus:ring-[#0c720f]   h-[55px] rounded-xl pl-[20px] bg-[#FAFAFA]" placeholder="Masukan Tempat Lahir" required>
                 @error('place_of_birth')
@@ -198,7 +205,7 @@
 
             <div class="w-full mt-5">
                 <p class="font-signika font-medium text-[14px] text-[#222831] mb-2">Email</p>
-                <input value="{{old('email')}}" name="email" type="email" class=" focus:outline-none w-full border border-black focus:ring-4 focus:border-none focus:ring-[#0c720f]   h-[55px] rounded-xl pl-[20px] bg-[#FAFAFA]" placeholder="Masukan Nama Lengkap Anda" required>
+                <input value="{{old('email')}}" name="email" type="email" class=" focus:outline-none w-full border border-black focus:ring-4 focus:border-none focus:ring-[#0c720f]   h-[55px] rounded-xl pl-[20px] bg-[#FAFAFA]" placeholder="Masukan Email" required>
                  @error('email')
                      <span class="text-red-500 mt-1 font-semibold ml-6 block py-1 text-sm">{{ $message }}</span>
                 @enderror

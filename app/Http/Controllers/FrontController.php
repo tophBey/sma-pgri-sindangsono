@@ -63,6 +63,7 @@ class FrontController extends Controller
             Student::create([
                 'user_id' => $user->id,
                 'fullname' => $validated['fullname'],
+                'religion' => $validated['religion'],
                 'nik' => $validated['nik'],
                 'nisn' => $validated['nisn'],
                 'place_of_birth' => $validated['place_of_birth'],

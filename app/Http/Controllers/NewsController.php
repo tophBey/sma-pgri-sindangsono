@@ -166,7 +166,7 @@ class NewsController extends Controller
             $news->delete();
             DB::commit();
 
-            return redirect()->route('admin.news.index');
+            return redirect()->route('admin.news.index')->with('successNews', 'Berhasil Menghapus Berita');
 
         } catch (Exception $exeption) {
 

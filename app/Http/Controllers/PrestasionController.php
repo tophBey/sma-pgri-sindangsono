@@ -137,7 +137,7 @@ class PrestasionController extends Controller
             $prestasion->delete();
             DB::commit();
 
-            return redirect()->route('admin.prestasion.index');
+            return redirect()->route('admin.prestasion.index')->with('successPresentasion', 'Berhasil Menghapus Prestasi');
 
         } catch (Exception $exeption) {
 

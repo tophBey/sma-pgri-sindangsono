@@ -129,7 +129,7 @@ class ExtracurricullarController extends Controller
 
             DB::commit();
 
-            return redirect()->route('admin.extracurricullar.index');
+            return redirect()->route('admin.extracurricullar.index')->with('successExtracurricular', 'Berhasil Menghapus Ekstrakulikuler');
 
         } catch (Exception $exeption) {
 

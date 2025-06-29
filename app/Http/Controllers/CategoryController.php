@@ -118,7 +118,8 @@ class CategoryController extends Controller
             $category->delete();
             DB::commit();
 
-            return redirect()->route('admin.category.index');
+            return redirect()->route('admin.category.index')->with('successCategory', 'Berhasil Menghapus Kategori');
+;
 
         } catch (Exception $exeption) {
             

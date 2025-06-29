@@ -141,7 +141,7 @@ class UserController extends Controller
             $user->delete();
             DB::commit();
 
-            return redirect()->route('admin.user.index');
+            return redirect()->route('admin.user.index')->with('successAdmin', 'Berhasil Menghapus Admin');
 
         } catch (Exception $exeption) {
 

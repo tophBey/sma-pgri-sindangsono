@@ -111,7 +111,7 @@ class AnnouncementController extends Controller
             $announcement->delete();
             DB::commit();
 
-            return redirect()->route('admin.announcement.index');
+            return redirect()->route('admin.announcement.index')->with('successAnnountcement', 'Berhasil Mengapus Pengumuman');
 
         } catch (Exception $exeption) {
             
